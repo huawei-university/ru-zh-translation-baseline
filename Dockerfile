@@ -26,5 +26,6 @@ WORKDIR /
 COPY run.sh .
 COPY OpenSubtitles.model* ./
 COPY src.code .
+RUN mkdir -p /opt/results/
 
 ENTRYPOINT ["bash", "run.sh"] 
